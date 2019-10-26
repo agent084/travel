@@ -1,0 +1,5 @@
+django
+django-autoslug-iplweb
+django-bootstrap4
+djangorestframework
+pillow

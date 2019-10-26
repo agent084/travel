@@ -1,0 +1,157 @@
+{% extends "boilerplate/base.html" %} {% load static %} {% load bootstrap4 %}
+{%block content %}
+
+<!--================Home Banner Area =================-->
+<section class="banner_area ">
+  <div class="banner_inner overlay d-flex align-items-center">
+    <div class="container">
+      <div class="banner_content">
+        <div class="page_link">
+          <a href="index.html">Home</a>
+          <a href="about-us.html">Contact Us</a>
+        </div>
+        <h2>About Us</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================End Home Banner Area =================-->
+
+<!--================ Start About Area =================-->
+<section class="section_gap about-area">
+  <div class="container">
+    <div class="single-about row">
+      <div class="col-lg-4 col-md-6 no-padding about-left">
+        <div class="about-content">
+          <h1>
+            We Believe <br />
+            that Interior beauty <br />
+            Lasts Long
+          </h1>
+          <p>
+            inappropriate behavior is often laughed off as “boys will be boys,”
+            women face higher conduct standards especially in the workplace.
+            That’s why it’s crucial that as women. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-6 text-center no-padding about-right">
+        <div class="about-thumb">
+          <img
+            src="{% static 'img/about-img.jpg' %}"
+            class="img-fluid info-img"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================ End About Area =================-->
+
+<!--================ Start CTA Area =================-->
+<div class="cta-area section_gap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <h1>Get Ready for Real time Adventure</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam quis nostrud exercitation.
+        </p>
+        <a href="#" class="primary-btn">Book a Trip</a>
+      </div>
+      <div class="offset-lg-1 col-lg-6">
+        <img
+          class="cta-img img-fluid"
+          src="{% static 'img/cta-img.png' %}"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<!--================ End CTA Area =================-->
+
+<!--================Team Area =================-->
+<section class="team_area section_gap_top">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-12">
+        <div class="main_title">
+          <p>We’re Offering these Trip Packages</p>
+          <h1>Intelligent Team Members</h1>
+          <span class="title-widget-bg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row team_inner">
+      <div class="col-lg-3 col-md-6">
+        <div class="team_item">
+          <div class="team_img">
+            <img
+              class="img-fluid w-100"
+              src="{% static 'img/team/team-1.jpg' %}"
+              alt=""
+            />
+            <div class="hover">
+              <h4>Randy Weaver</h4>
+              <p>Senior Barrister at law</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="team_item">
+          <div class="team_img">
+            <img
+              class="img-fluid w-100"
+              src="{% static 'img/team/team-2.jpg' %}"
+              alt=""
+            />
+            <div class="hover">
+              <h4>Randy Weaver</h4>
+              <p>Senior Barrister at law</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="team_item">
+          <div class="team_img">
+            <img
+              class="img-fluid w-100"
+              src="{% static 'img/team/team-3.jpg' %}"
+              alt=""
+            />
+            <div class="hover">
+              <h4>Randy Weaver</h4>
+              <p>Senior Barrister at law</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="team_item">
+          <div class="team_img">
+            <img
+              class="img-fluid w-100"
+              src="{% static 'img/team/team-4.jpg' %}"
+              alt=""
+            />
+            <div class="hover">
+              <h4>Randy Weaver</h4>
+              <p>Senior Barrister at law</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================End Team Area =================-->
+
+{% endblock %}
