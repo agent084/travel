@@ -53,11 +53,11 @@ def categories(request, slug):
     return render(request, "boilerplate/store.html", context)
 
 
-def shop_single(request, slug):
+def packages_single(request, slug):
     product = Product.objects.get(active=True, slug=slug)
     categories = Category.objects.filter(active=True)
     context = {"product": product, "categories": categories}
-    return render(request, "boilerplate/shop-single.html", context)
+    return render(request, "boilerplate/packages_single.html", context)
 
 
 def signup(request):
