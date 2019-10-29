@@ -1,0 +1,84 @@
+{% extends "boilerplate/base.html" %} {% load static %} {% load bootstrap4 %}
+{%block content %}
+
+<!--================Home Banner Area =================-->
+<section class="banner_area ">
+  <div class="banner_inner overlay d-flex align-items-center">
+    <div class="container">
+      <div class="banner_content">
+        <div class="page_link">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <h2>Join Us</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================End Home Banner Area =================-->
+
+<!--================Join Us Area =================-->
+<section class="feature-area section_gap_top">
+		<div class="container">
+			<div class="row align-items-end justify-content-left">
+				<div class="col-lg-12">
+					<div class="main_title">
+						<!-- <p>We’re Offering these Popular Services</p> -->
+						<h1>Why Join Us?</h1>
+						<span class="title-widget-bg"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- single-feature -->
+				<div class="col-lg-4 col-md-6">
+					<div class="single-feature">
+						<div class="feature-details">
+							<h5>Travel and Earn </h5>
+							<p>
+								Lorem ipsum dolor sit amet, consecter adipisicing elit, sed do eiusmod tempor incididunt.
+							</p>
+							<!-- <a href="#" class="primary-btn mb-40">Read More</a> -->
+						</div>
+						<div class="feature-thumb">
+							<img class="img-fluid" src="{% static 'img/service/s1.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+				<!-- single-feature -->
+				<div class="col-lg-4 col-md-6">
+					<div class="single-feature">
+						<div class="feature-details">
+							<h5>Become an integral part of <br>
+								Travel community around the world </h5>
+							<p>
+								Lorem ipsum dolor sit amet, consecter adipisicing elit, sed do eiusmod tempor incididunt.
+							</p>
+							<!-- <a href="#" class="primary-btn mb-40">Read More</a> -->
+						</div>
+						<div class="feature-thumb">
+							<img class="img-fluid" src="{% static 'img/service/s2.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+				<!-- single-feature -->
+				<div class="col-lg-4 col-md-6">
+					<div class="single-feature">
+						<div class="feature-details">
+							<h5>Fun and safe Workplace</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consecter adipisicing elit, sed do eiusmod tempor incididunt.
+							</p>
+							<!-- <a href="#" class="primary-btn mb-40">Read More</a> -->
+						</div>
+						<div class="feature-thumb">
+							<img class="img-fluid" src="{% static 'img/service/s3.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--================Join Us Area =================-->
+
+{% endblock %}

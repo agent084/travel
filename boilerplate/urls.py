@@ -16,4 +16,5 @@ urlpatterns = [
     path("packages_single/<slug>/", views.packages_single, name="packages_single"),
     path("book-trip.html", views.book_trip, name="book_trip"),
     path("categories/<slug>/", views.categories, name="categories"),
+    path("join-us.html", views.join, name="join-us"),
 ]

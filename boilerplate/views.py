@@ -26,6 +26,12 @@ def about(request):
     context = {"products": products, "categories": categories}
     return render(request, "boilerplate/about-us.html", context)
 
+def join(request):
+    products = Product.objects.filter(active=True)
+    categories = Category.objects.filter(active=True)
+    context = {"products": products, "categories": categories}
+    return render(request, "boilerplate/join-us.html", context)
+
 
 def packages(request):
     products = Product.objects.filter(active=True)
