@@ -10,7 +10,6 @@ from django.db import models
 class Category(models.Model):
     name = models.CharField(max_length=250)
     slug = AutoSlugField(populate_from='name')
-    image = models.ImageField(upload_to="categories", blank=True)
     description = models.TextField(blank=True)
     featured = models.BooleanField(default=False)
     active = models.BooleanField(default=True)
@@ -29,7 +28,7 @@ class Product(models.Model):
     slug = AutoSlugField(populate_from='name')
     image = models.ImageField(upload_to="products", blank=True)
     brand = models.CharField(max_length=250, blank=True)
-    shipping = models.CharField(max_length=250, blank=True)
+    duration = models.CharField(max_length=250, blank=True)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=15, decimal_places=2, default=0.0)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
